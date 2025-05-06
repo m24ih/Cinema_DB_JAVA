@@ -5,6 +5,7 @@ public class Main {
 
         MovieDAO movieDAO = new MovieDAO();
         SessionsDAO sessionsDAO = new SessionsDAO();
+        TicketDAO ticketDAO = new TicketDAO();
 
         try {
             // Add movie
@@ -25,7 +26,14 @@ public class Main {
             // Delete session by ID
             //sessionsDAO.deleteSession(2);
 
-
+            // Add ticket
+            ticketDAO.addTicket(4,9,9.99,true);
+            // Select tickets
+            ticketDAO.selectTicket();
+            // Update ticket
+            ticketDAO.updateTicket(4,7);
+            // Delete ticket by ID
+            ticketDAO.deleteTicket(4);
 
 
         } catch (SQLException exception) {

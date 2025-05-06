@@ -44,4 +44,41 @@ public class TicketDAO {
             helper.showErrorMessage(exception);
         }
     }
+
+    public void updateTicket(int id, int seat_id) throws SQLException {
+        DbHelper helper = new DbHelper();
+        String sql = "UPDATE Tickets SET seat_id = ? WHERE id = ?";
+
+        try (Connection connection = helper.getConnection();
+             PreparedStatement statement = connection.prepareStatement(sql)) {
+
+            statement.setInt(1, id);
+            statement.setInt(3,seat_id);
+            int result = statement.executeUpdate();
+            System.out.println("Update completed. Affected rows: " + result);
+
+
+        } catch (SQLException exception){
+            helper.showErrorMessage(exception);
+        }
+
+    }
+
+    public void deleteTicket(int id) throws SQLException {
+        DbHelper helper = new DbHelper();
+        String sql = "DELETE Tickets WHERE id = ?";
+
+        try (Connection connection = helper.getConnection();
+             PreparedStatement statement = connection.prepareStatement(sql)) {
+
+            statement.setInt(1, id);
+            int result = statement.executeUpdate();
+            System.out.println("Delete completed. Affected rows: " + result);
+
+
+        } catch (SQLException exception){
+            helper.showErrorMessage(exception);
+        }
+
+    }
 }
