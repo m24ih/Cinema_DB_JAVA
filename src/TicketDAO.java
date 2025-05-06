@@ -53,7 +53,7 @@ public class TicketDAO {
              PreparedStatement statement = connection.prepareStatement(sql)) {
 
             statement.setInt(1, id);
-            statement.setInt(3,seat_id);
+            statement.setInt(2,seat_id);
             int result = statement.executeUpdate();
             System.out.println("Update completed. Affected rows: " + result);
 
@@ -66,7 +66,7 @@ public class TicketDAO {
 
     public void deleteTicket(int id) throws SQLException {
         DbHelper helper = new DbHelper();
-        String sql = "DELETE Tickets WHERE id = ?";
+        String sql = "DELETE FROM Tickets WHERE id = ?";
 
         try (Connection connection = helper.getConnection();
              PreparedStatement statement = connection.prepareStatement(sql)) {
