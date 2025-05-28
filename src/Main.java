@@ -8,33 +8,31 @@ public class Main {
         TicketDAO ticketDAO = new TicketDAO();
 
         try {
-            // Add movie
-            //movieDAO.addMovie("Back to the Future", "Sci-Fi", 116, "Robert Zemeckis", "Time travel adventure");
-            // Select movies
-            //movieDAO.selectMovie();
-            // Update movie title
-            //movieDAO.updateMovie(17, "Updated Title");
-            // Delete movie by ID
-            //movieDAO.deleteMovie(2);
 
-            // Add session
-            //sessionsDAO.addSession(2,3,Timestamp.valueOf("2025-05-06 15:00:00"));
-            // Select sessions
-            //sessionsDAO.selectSession();
-            // Update session times
-            //sessionsDAO.updateSessionTime(5,Timestamp.valueOf("2025-05-10 20:30:00"));
-            // Delete session by ID
-            //sessionsDAO.deleteSession(2);
+            // For adding elements to database
+            //MovieInputHandler.addMovieFromInput(movieDAO);
+            //SessionInputHandler.addSessionFromInput(sessionsDAO);
+            //TicketInputHandler.addTicketFromInput(ticketDAO);
 
-            // Add ticket
-            //ticketDAO.addTicket(4,9,9.99,true);
-            // Select tickets
+            // For updating elements at the database
+            //MovieUpdateHandler.updateMovieTitleFromInput(movieDAO);
+            //SessionUpdateHandler.updateSessionTimeFromInput(sessionsDAO);
+            //TicketUpdateHandler.updateTicketSeatFromInput(ticketDAO);
+
+            // For deleting elements from the database
+            //MovieDeleteHandler.deleteMovieFromInput(movieDAO);
+            //SessionDeleteHandler.deleteSessionFromInput(sessionsDAO);
+            //TicketDeleteHandler.deleteTicketFromInput(ticketDAO);
+
+            // For printing database elements with specifications
+            //MovieSelectHandler.selectMoviesByGenre(movieDAO);
+            //SessionSelectHandler.selectSessionsByMovieId(sessionsDAO);
+            //TicketSelectHandler.selectTicketsBySoldStatus(ticketDAO);
+
+            // For printing all database elements
+            movieDAO.selectMovie();
             ticketDAO.selectTicket();
-            // Update ticket
-            ticketDAO.updateTicket(23,7);
-            // Delete ticket by ID
-            ticketDAO.deleteTicket(41);
-            ticketDAO.deleteTicket(42);
+            sessionsDAO.selectSession();
 
 
         } catch (SQLException exception) {

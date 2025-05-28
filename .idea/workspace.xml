@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdf89967-1301-44ce-9964-e834ce09ca01" name="Changes" comment="" />
+    <list default="true" id="bdf89967-1301-44ce-9964-e834ce09ca01" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MovieDeleteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieInputHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieSelectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieUpdateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SessionDeleteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SessionInputHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SessionSelectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SessionUpdateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketDeleteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketInputHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketSelectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketUpdateHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_9_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_9_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cinema_DB_JAVA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema_DB_JAVA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/DbHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/DbHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/MovieDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/MovieDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/SessionsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/SessionsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/TicketDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/TicketDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DbHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DbHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MovieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovieDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SessionsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SessionsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicketDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicketDAO.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,12 +52,12 @@
     &quot;assignee&quot;: &quot;m24ih&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:m24ih/Cinema_DB_JAVA.git&quot;,
-    &quot;accountId&quot;: &quot;1f3fcf09-29d2-437c-ab9b-b049ee394d07&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/m24ih/Cinema_DB_JAVA.git",
+    "accountId": "ccc669c2-1064-42cb-a286-b882e9ce9b4f"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -40,21 +66,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/melih/IdeaProjects/Cinema_DB_JAVA&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/melih/IdeaProjects/Cinema_DB_JAVA/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "/home/melih/IdeaProjects/Cinema_DB_JAVA",
+    "onboarding.tips.debug.path": "/home/melih/IdeaProjects/Cinema_DB_JAVA/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />

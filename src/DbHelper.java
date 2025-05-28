@@ -2,9 +2,9 @@ import java.sql.*;
 
 public class DbHelper {
 
-    private String url = "jdbc:mysql://localhost:3306/cinema_db";
+    private String url = "jdbc:mysql://127.0.0.1:3306/cinema_db";
     private String user = "root";
-    private String password = "MyNewPass4!";
+    private String password = "usBu6XjaMaMdjY9VWatv";
 
     public Connection getConnection() throws SQLException {
         return DriverManager.getConnection(url, user, password);

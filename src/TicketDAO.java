@@ -20,28 +20,47 @@ public class TicketDAO {
         }
     }
 
-    public void selectTicket() throws SQLException{
+    public void selectTicket() throws SQLException {
         DbHelper helper = new DbHelper();
         String sql = "SELECT * FROM Tickets";
 
         try (Connection connection = helper.getConnection();
-        Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery(sql);
-        ){
-            ArrayList<Tickets> tickets = new ArrayList<>();
-            while (resultSet.next()){
-                tickets.add(new Tickets(resultSet.getInt("id"),
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery(sql)) {
+
+            while (resultSet.next()) {
+                System.out.println("Ticket Id: " + resultSet.getInt("id"));
+                System.out.println("Session Id: " + resultSet.getInt("session_id"));
+                System.out.println("Seat Id: " + resultSet.getInt("seat_id"));
+                System.out.println("Price: " + resultSet.getDouble("price"));
+                System.out.println("Sold: " + resultSet.getBoolean("is_sold"));
+                System.out.println("---------------------------");
+            }
+
+        } catch (SQLException exception) {
+            helper.showErrorMessage(exception);
+        }
+    }
+
+
+    public void selectTicketsBySoldStatus(boolean isSold) throws SQLException {
+        DbHelper helper = new DbHelper();
+        String sql = "SELECT * FROM Tickets WHERE is_sold = ?";
+
+        try (Connection connection = helper.getConnection();
+             PreparedStatement statement = connection.prepareStatement(sql)) {
+
+            statement.setBoolean(1, isSold);
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()) {
+                System.out.printf("Ticket ID: %d, Session ID: %d, Seat ID: %d, Price: %.2f, Sold: %b%n",
+                        resultSet.getInt("id"),
                         resultSet.getInt("session_id"),
                         resultSet.getInt("seat_id"),
                         resultSet.getDouble("price"),
-                        resultSet.getBoolean("is_sold")
-                ));
+                        resultSet.getBoolean("is_sold"));
             }
-            for (Tickets ticket:tickets){
-                System.out.println(ticket);
-            }
-        } catch (SQLException exception){
-            helper.showErrorMessage(exception);
         }
     }
 

@@ -24,30 +24,50 @@ public class MovieDAO {
 
     public void selectMovie() throws SQLException {
         DbHelper helper = new DbHelper();
+        String sql = "SELECT * FROM Movies";
 
-        try {
-            Connection connection = helper.getConnection();
-            Statement statement = connection.createStatement();
-            String sql = "SELECT * FROM Movies";
-            ResultSet resultSet = statement.executeQuery(sql);
+        try (Connection connection = helper.getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery(sql)) {
 
-            ArrayList<Movie> movies = new ArrayList<Movie>();
             while (resultSet.next()) {
-                movies.add(new Movie(
+                System.out.println("Movie ID: " + resultSet.getInt("id"));
+                System.out.println("Title: " + resultSet.getString("title"));
+                System.out.println("Genre: " + resultSet.getString("genre"));
+                System.out.println("Duration: " + resultSet.getInt("duration"));
+                System.out.println("Director: " + resultSet.getString("director"));
+                System.out.println("Description: " + resultSet.getString("description"));
+                System.out.println("---------------------------");
+            }
+
+        } catch (SQLException exception) {
+            helper.showErrorMessage(exception);
+        }
+    }
+
+
+    public void selectMoviesByGenre(String genre) throws SQLException {
+        DbHelper helper = new DbHelper();
+        String sql = "SELECT * FROM Movies WHERE genre = ?";
+
+        try (Connection connection = helper.getConnection();
+             PreparedStatement statement = connection.prepareStatement(sql)) {
+
+            statement.setString(1, genre);
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()) {
+                System.out.printf("Movie ID: %d, Title: %s, Genre: %s, Duration: %d, Director: %s, Description: %s%n",
                         resultSet.getInt("id"),
                         resultSet.getString("title"),
                         resultSet.getString("genre"),
                         resultSet.getInt("duration"),
                         resultSet.getString("director"),
-                        resultSet.getString("description")));
+                        resultSet.getString("description"));
             }
-            for (Movie m : movies) {
-                System.out.println(m);
-            }
-        } catch (SQLException exception) {
-            helper.showErrorMessage(exception);
         }
     }
+
 
     public void updateMovie(int id, String newTitle) throws SQLException {
         DbHelper helper = new DbHelper();

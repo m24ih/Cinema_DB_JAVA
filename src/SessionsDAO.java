@@ -22,28 +22,44 @@ public class SessionsDAO {
 
     public void selectSession() throws SQLException {
         DbHelper helper = new DbHelper();
+        String sql = "SELECT * FROM Sessions";
 
-        try {
-            Connection connection = helper.getConnection();
-            Statement statement = connection.createStatement();
-            String sql = "SELECT * FROM Sessions";
-            ResultSet resultSet = statement.executeQuery(sql);
+        try (Connection connection = helper.getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery(sql)) {
 
-            ArrayList<Sessions> sessions = new ArrayList<>();
             while (resultSet.next()) {
-                sessions.add(new Sessions(
-                        resultSet.getInt("id"),
-                        resultSet.getInt("movie_id"),
-                        resultSet.getInt("salon_id"),
-                        resultSet.getTimestamp("session_time")));
+                System.out.println("Session Id: " + resultSet.getInt("id"));
+                System.out.println("Movie Id: " + resultSet.getInt("movie_id"));
+                System.out.println("Hall Id: " + resultSet.getInt("hall_id"));
+                System.out.println("Session Time: " + resultSet.getTimestamp("session_time"));
+                System.out.println("---------------------------");
             }
-            for (Sessions s : sessions) {
-                System.out.println(s);
-            }
+
         } catch (SQLException exception) {
             helper.showErrorMessage(exception);
         }
+    }
 
+
+    public void selectSessionsByMovieId(int movieId) throws SQLException {
+        DbHelper helper = new DbHelper();
+        String sql = "SELECT * FROM Sessions WHERE movieId = ?";
+
+        try (Connection connection = helper.getConnection();
+             PreparedStatement statement = connection.prepareStatement(sql)) {
+
+            statement.setInt(1, movieId);
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()) {
+                System.out.printf("Session ID: %d, Movie ID: %d, Hall ID: %d, Time: %s%n",
+                        resultSet.getInt("id"),
+                        resultSet.getInt("movieId"),
+                        resultSet.getInt("hallId"),
+                        resultSet.getTimestamp("time"));
+            }
+        }
     }
 
 
