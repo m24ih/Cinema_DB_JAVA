@@ -4,32 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdf89967-1301-44ce-9964-e834ce09ca01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MovieDeleteHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieInputHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieSelectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieUpdateHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SessionDeleteHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SessionInputHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SessionSelectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SessionUpdateHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TicketDeleteHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TicketInputHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TicketSelectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TicketUpdateHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_9_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_9_3_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cinema_DB_JAVA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema_DB_JAVA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/DbHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/DbHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/MovieDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/MovieDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/SessionsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/SessionsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/TicketDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/TicketDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DbHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DbHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MovieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovieDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SessionsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SessionsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicketDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicketDAO.java" afterDir="false" />
+    <list default="true" id="bdf89967-1301-44ce-9964-e834ce09ca01" name="Changes" comment="Added other handlers">
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +80,19 @@
       <option name="presentableId" value="Default" />
       <updated>1746468324724</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added other handlers">
+      <option name="closed" value="true" />
+      <created>1748469253483</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748469253483</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added other handlers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added other handlers" />
   </component>
 </project>
