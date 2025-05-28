@@ -7,7 +7,7 @@ public class MovieUpdateHandler {
 
         System.out.print("Enter Movie ID to update: ");
         int id = scanner.nextInt();
-        scanner.nextLine(); // buffer temizle
+        scanner.nextLine();
 
         System.out.print("Enter new movie title: ");
         String newTitle = scanner.nextLine();

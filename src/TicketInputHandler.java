@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import java.sql.*;
 
-
 public class TicketInputHandler {
     public static void addTicketFromInput(TicketDAO ticketDAO) throws SQLException {
         Scanner scanner = new Scanner(System.in);

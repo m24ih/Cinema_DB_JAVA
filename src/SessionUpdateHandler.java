@@ -3,12 +3,12 @@ import java.sql.Timestamp;
 import java.util.Scanner;
 
 public class SessionUpdateHandler {
-    public static void updateSessionTimeFromInput(SessionsDAO sessionsDAO) {
+    public static void updateSessionTimeFromInput(SessionsDAO sessionsDAO) throws SQLException {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter Session ID to update: ");
         int id = scanner.nextInt();
-        scanner.nextLine(); // buffer temizle
+        scanner.nextLine();
 
         System.out.print("Enter new session time (yyyy-MM-dd HH:mm:ss): ");
         String newTime = scanner.nextLine();

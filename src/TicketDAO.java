@@ -1,5 +1,4 @@
 import java.sql.*;
-import java.util.ArrayList;
 
 public class TicketDAO {
     public void addTicket(int session_id, int seat_id, double price, boolean is_sold) throws SQLException {

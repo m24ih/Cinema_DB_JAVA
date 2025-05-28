@@ -1,5 +1,4 @@
 import java.sql.*;
-import java.util.ArrayList;
 
 public class SessionsDAO {
 
@@ -41,7 +40,6 @@ public class SessionsDAO {
         }
     }
 
-
     public void selectSessionsByMovieId(int movieId) throws SQLException {
         DbHelper helper = new DbHelper();
         String sql = "SELECT * FROM Sessions WHERE movieId = ?";
@@ -62,7 +60,6 @@ public class SessionsDAO {
         }
     }
 
-
     public void updateSessionTime(int sessionId, Timestamp newSessionTime) {
         DbHelper helper = new DbHelper();
         String sql = "UPDATE Sessions SET session_time = ? WHERE id = ?";
@@ -80,7 +77,6 @@ public class SessionsDAO {
             helper.showErrorMessage(e);
         }
     }
-
 
     public void deleteSession(int id) throws SQLException {
         DbHelper helper = new DbHelper();

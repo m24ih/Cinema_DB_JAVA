@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bdf89967-1301-44ce-9964-e834ce09ca01" name="Changes" comment="Added other handlers">
-      <change beforePath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema_DB_JAVA/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MovieInputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovieInputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MovieUpdateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovieUpdateHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SessionUpdateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SessionUpdateHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SessionsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SessionsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicketDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicketDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicketInputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicketInputHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +35,12 @@
     &quot;assignee&quot;: &quot;m24ih&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/m24ih/Cinema_DB_JAVA.git",
-    "accountId": "ccc669c2-1064-42cb-a286-b882e9ce9b4f"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/m24ih/Cinema_DB_JAVA.git&quot;,
+    &quot;accountId&quot;: &quot;ccc669c2-1064-42cb-a286-b882e9ce9b4f&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -55,7 +62,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager">

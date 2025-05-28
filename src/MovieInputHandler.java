@@ -22,7 +22,7 @@ public class MovieInputHandler {
         try {
             movieDAO.addMovie(title, genre, duration, director, description);
         } catch (Exception exception) {
-            System.err.println("An error occured while adding movie: " + exception.getMessage());
+            System.err.println("An error occurred while adding movie: " + exception.getMessage());
         }
     }
 }
